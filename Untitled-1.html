@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aegis-2X | Smart City Safety Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Header Section -->
+        <header class="app-header">
+            <div class="logo">AEGIS-2X</div>
+            <div class="chip-status">
+                <span class="pulse-dot"></span>
+                <span id="chip-text">2nm Edge-AI Active</span>
+            </div>
+        </header>
+
+        <!-- Main Dashboard Floating Cards -->
+        <main class="dashboard-grid">
+            <!-- Emergency Alert Card -->
+            <div class="card emergency-card">
+                <h3>Emergency Alert</h3>
+                <div class="alert-box" id="alertBox">
+                    <span class="status-indicator warning"></span>
+                    <p id="alertMessage">Monitoring Smart City Sensors...</p>
+                </div>
+                <button class="btn warning-btn" onclick="triggerSimulatedAlert()">Simulate Hazard</button>
+            </div>
+
+            <!-- AR Evacuation & Navigation -->
+            <div class="card navigation-card">
+                <h3>AR Safe Route Guidance</h3>
+                <div class="map-placeholder">
+                    <div class="route-line"></div>
+                    <p>3D Spatial Map Loaded</p>
+                </div>
+            </div>
+
+            <!-- Cyber Security & System Health -->
+            <div class="card status-card">
+                <h3>Hardware Security</h3>
+                <div class="stat-group">
+                    <label>2nm Chip Encryption:</label>
+                    <span class="stat-value">Quantum-Safe AES-256</span>
+                </div>
+                <div class="stat-group">
+                    <label>Resource Efficiency:</label>
+                    <span class="stat-value">98.4% Saved</span>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
